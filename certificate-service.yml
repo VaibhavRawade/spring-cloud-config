@@ -5,13 +5,12 @@ spring:
   application:
     name: certificate-service
 
+  datasource:
+    url: jdbc:postgresql://localhost:5432/CERTIFICATE-SERVICE
+    username: postgres
+    password: root
+
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
-
-spring:
-  datasource:
-    url: jdbc:postgresql://localhost:5432/CERTIFICATE-SERVICE
-     username: postgres
-       password: root
